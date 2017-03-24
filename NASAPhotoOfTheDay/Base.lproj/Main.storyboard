@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="3NE-fq-Oj9">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="xXF-vk-Y2T">
+            <objects>
+                <navigationController id="3NE-fq-Oj9" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Llh-Jc-NT4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="e93-fN-paX"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uLq-Ua-5m6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-710" y="139"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="NASAPhotoOfTheDay" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ul1-z7-KVI">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="ul1-z7-KVI" secondAttribute="trailing" id="LIo-Xi-vnY"/>
+                            <constraint firstItem="ul1-z7-KVI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="YQQ-Y0-TpZ"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ul1-z7-KVI" secondAttribute="bottom" id="crc-hA-Rxn"/>
+                            <constraint firstItem="ul1-z7-KVI" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="lU4-G3-HdG"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="lBi-2l-Far">
+                        <barButtonItem key="leftBarButtonItem" systemItem="action" id="6lq-Db-hW3">
+                            <color key="tintColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="sharePhoto:" destination="BYZ-38-t0r" id="hNm-cg-dNb"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Info" id="aq3-zM-550">
+                            <color key="tintColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <segue destination="DUU-Lc-n1t" kind="show" identifier="showInfo" id="9ew-WN-7nX"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="imageView" destination="ul1-z7-KVI" id="Vv7-7n-iXq"/>
+                        <outlet property="navigationBar" destination="lBi-2l-Far" id="0Jp-bu-Q0L"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+        </scene>
+        <!--Info View Controller-->
+        <scene sceneID="gXh-1R-OHN">
+            <objects>
+                <viewController id="DUU-Lc-n1t" customClass="InfoViewController" customModule="NASAPhotoOfTheDay" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gMk-gn-gMk"/>
+                        <viewControllerLayoutGuide type="bottom" id="EeR-Be-rot"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="RRa-aU-BHF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="SE7-ll-vzr">
+                                <rect key="frame" x="16" y="72" width="351" height="587"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="m5h-BY-2Rl">
+                                        <rect key="frame" x="0.0" y="0.0" width="351" height="106.5"/>
+                                        <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="24"/>
+                                        <color key="textColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="N4G-Ie-jUb">
+                                        <rect key="frame" x="0.0" y="114.5" width="351" height="75.5"/>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                        <color key="textColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="N4U-DO-mzK">
+                                        <rect key="frame" x="0.0" y="198" width="351" height="389"/>
+                                        <string key="text">Stars are forming in the gigantic dust pillar called the Cone Nebula. Cones, pillars, and majestic flowing shapes abound in stellar nurseries where natal clouds of gas and dust are buffeted by energetic </string>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="SE7-ll-vzr" firstAttribute="trailing" secondItem="RRa-aU-BHF" secondAttribute="trailingMargin" constant="8" id="Obc-4N-Fs7"/>
+                            <constraint firstItem="SE7-ll-vzr" firstAttribute="leading" secondItem="RRa-aU-BHF" secondAttribute="leadingMargin" id="Ymy-Ke-w46"/>
+                            <constraint firstItem="EeR-Be-rot" firstAttribute="top" secondItem="SE7-ll-vzr" secondAttribute="bottom" constant="8" id="b1u-Jp-ZSc"/>
+                            <constraint firstItem="SE7-ll-vzr" firstAttribute="top" secondItem="gMk-gn-gMk" secondAttribute="bottom" constant="8" id="mU6-Ym-iKJ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="aboutLabel" destination="N4U-DO-mzK" id="r95-IN-w0z"/>
+                        <outlet property="dateLabel" destination="N4G-Ie-jUb" id="0M3-kh-cy3"/>
+                        <outlet property="titleLabel" destination="m5h-BY-2Rl" id="ho9-gq-UhT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Iqv-NF-VZU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="824.79999999999995" y="142.57871064467767"/>
+        </scene>
+    </scenes>
+</document>
