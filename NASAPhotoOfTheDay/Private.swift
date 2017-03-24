@@ -8,4 +8,4 @@
 
 import Foundation
 
-let YOUR_API_KEY = "wXfDLZmoUnbm9ngtxn1vtFK7wcDm4nrXLUB9IrFU"
+let YOUR_API_KEY = ""
