@@ -23,7 +23,7 @@ let YOUR_API_KEY = <YOUR_API_KEY>
 
 ## Instructions
 
-You can see NASA's Astronomy Photo of the day by simply opening the app. Clicking on the :star: icon in the lower left corner pulls up a view with all of the provided information about the photo.
+You can see NASA's Astronomy Photo of the day by simply opening the app. Clicking on the **Info** button in the upper-left-corner pulls up a view with all of the provided information about the photo.
 
 To share the photo, click the **Share** icon in the upper-left-hand corner of the photo view.
 
