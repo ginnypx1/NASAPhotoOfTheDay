@@ -46,15 +46,15 @@ class ViewController: UIViewController, UINavigationControllerDelegate {
                 }
                 // save as photo object
                 self.photo = Photo(dictionary: results)
-                print("photo saved as: \(self.photo)")
+                print("photo saved as: \(String(describing: self.photo))")
                 // retrieve the photo for display
                 if let imageURL = self.photo?.image {
                     self.extractPhoto(imageURL)
                 } else {
-                    print("There was an error in taskForGETMethod: \(error)")
+                    print("There was an error in taskForGETMethod: \(String(describing: error))")
                 }
             } else {
-                print("There was an error in taskForGETMethod: \(error)")
+                print("There was an error in taskForGETMethod: \(String(describing: error))")
             }
         })
     }
@@ -75,7 +75,7 @@ class ViewController: UIViewController, UINavigationControllerDelegate {
                     print("There was a problem extracting the image data.")
                 }
             } else {
-                print("There was an error in taskForGETImage: \(error)")
+                print("There was an error in taskForGETImage: \(String(describing: error))")
             }
                 
         })
