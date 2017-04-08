@@ -1,4 +1,4 @@
-#NASA Photo Of the Day
+# NASA Photo Of the Day
 
 "Nasa Photo of the Day" is an app developed to practice networking and API calls, JSON, MVC structure and Unit Tests. It downloads and displays NASA's Astronomy Photo of the Day, and allows the user to read the information about the photo as well as save and share the photo.
 
