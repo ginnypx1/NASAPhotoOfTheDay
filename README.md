@@ -34,3 +34,7 @@ NASA's Astronomy Picture of the day API can be found at: https://catalog.data.go
 ## Improvements
 
 Right now I am loading the photo of the day as an Image View, to allow easy saving and sharing and also to practice converting JSON data into a totally different format. In the future, this should probably be changed to be a web view display, to handle the days when NASA decides to provide a YouTube video instead of a still photo.
+
+## Screenshots
+
+App screenshots can be seen at http://ginnypx1.github.io/NASAPhotoOfTheDay/
